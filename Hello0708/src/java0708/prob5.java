@@ -20,7 +20,8 @@ public class prob5 {
 			System.out.println("D");
 		else 
 			System.out.println("F");
-		}		
-
+		}			
+	
+	
 	}
 

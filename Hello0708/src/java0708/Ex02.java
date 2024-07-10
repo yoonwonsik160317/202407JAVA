@@ -18,12 +18,12 @@ public class Ex02 {
 		int apple = getCount("사과의 개수 입력:", scan);
 		//System.out.print("사과의 개수 입력 : ");
 		//String input = scan.nextLine();
-		//int apple = Integer.parseInt(input);
+		// apple = Integer.parseInt(input);
 		
 		int people = getCount("친구 명수 입력: ", scan);
 		//System.out.print("친구의 명수 입력 : ");
 		//input = scan.nextLine();
-		//int people = Integer.parseInt(input);
+		// people = Integer.parseInt(input);
 		
 		int remainder = apple % (people+1);
 		System.out.printf("남은 사과의 개수: %d개\n", remainder);

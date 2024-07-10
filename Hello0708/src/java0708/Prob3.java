@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Prob3 {
 	
-	
 
 	public static void main(String[]args) {
 	Scanner scan = new Scanner(System.in);
@@ -23,6 +22,6 @@ public class Prob3 {
 	} else {
 		System.out.print("두 수의 크기는 같습니다 0");
 	}
-		
+	
 	}
 }

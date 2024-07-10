@@ -3,28 +3,36 @@ package java0708;
 import java.util.Scanner;
 
 public class prob4 {
+	
+	public static int maxNum(int x, int y, int z) {
+		
+		int max = x;
+		
+		if (y > max)
+			max = y;
+		if (z > max)
+			max = z;
+		
+		return max;
+	}
 
 	public static void main(String[] args) {
+		
+		int x, y, z;
 		
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("첫 번째 수 입력 : ");
-		int input = scan.nextInt();
+		x = scan.nextInt();
 		
 		System.out.print("두 번째 수 입력 : ");
-		int input2 = scan.nextInt();
+		y = scan.nextInt();
 
 		System.out.print("세 번째 수 입력 : ");
-		int input3 = scan.nextInt();
+		z = scan.nextInt();
 		
-		int max = input;
 		
-		if (input2 > max)
-			max = input2;
-		if (input3 > max)
-			max = input3;
-		
-		System.out.printf("가장 큰 수는 %d 입니다 ", max	);
+		System.out.printf("가장 큰 수는 %d 입니다 ", maxNum(x, y, z));
 		
 	}
 	
