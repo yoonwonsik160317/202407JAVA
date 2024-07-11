@@ -11,6 +11,8 @@ public class Prob5_1 {
 		int score = scan.nextInt();
 		
 		switch (score/10) {
+		case 10: System.out.println("A");
+		break;
 		case 9: System.out.println("A");
 		break;
 		case 8: System.out.println("B");
