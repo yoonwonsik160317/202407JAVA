@@ -52,6 +52,8 @@ public class Prob9 {
 					System.out.println("1. 이름 : "+inputName);
 					System.out.println("2. 주민번호 앞 6자리 : "+ inputNum);
 					System.out.println("3. 전화번호 : "+inputTel);
+					
+					
 					break;
 					
 				case 3:

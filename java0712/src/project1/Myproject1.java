@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class Myproject1 {
 
 	public static void main(String[] args) {
+		boolean run = true;
+		Scanner scanner = new Scanner(System.in);
 		Member nowMember = null;
 		ArrayList<Member> memberList = null;
 		
@@ -16,14 +18,12 @@ public class Myproject1 {
 				ObjectInputStream ois = new ObjectInputStream(fis)) {
 					memberList =  (ArrayList<Member>) ois.readObject();
 					System.out.println("파일에서 객체를 가져왔습니다");
-		} catch (IOException | ClassNotFoundException e) {
+		} 
+		catch (IOException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		boolean run = true;
-		Scanner scanner = new Scanner(System.in);
 		
 		while(run) {
-			
 			System.out.println("------------------------------------------------");
 			System.out.println("1.로그인 | 2.회원가입 | 3.예금/출금 | 4.회원 조회 | 5.종료");
 			System.out.println("------------------------------------------------");
@@ -35,9 +35,12 @@ public class Myproject1 {
 					System.out.println("로그인 처리");
 					System.out.print("아이디 : ");
 					String name = scanner.next();
+					
 					System.out.print("패스워드 : ");
 					String ssnPassword = scanner.next();
+					
 					boolean x = false;
+					
 					for (Member find:memberList) {
 						if(find.name.equals(name)&&(find.ssn.equals(ssnPassword))) {
 							System.out.println("로그인 성공");
@@ -48,12 +51,10 @@ public class Myproject1 {
 						} else {
 							x = true;
 						}
-					
 					}
 					if(x) {
 						System.out.println("로그인 실패");
 					}	
-					
 					break;
 					
 				case 2:
