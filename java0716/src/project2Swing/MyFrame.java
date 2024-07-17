@@ -1,6 +1,12 @@
-package java0716;
+package project2Swing;
 
 import java.awt.Container;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -8,29 +14,23 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class MyFrame extends JFrame{
-	
+
+
+
+public class MyFrame extends JFrame {
 	JLabel lb1 = new JLabel("아이디");
 	JTextField jt1 = new JTextField();
-	
 	JLabel lb2 = new JLabel("SSN");
 	JTextField jt2 = new JTextField();
-	
-	
 	JLabel lb3 = new JLabel("전화번호");
 	JTextField jt3 = new JTextField();
-	
 	JButton jb1 = new JButton("로그인");
 	JButton jb2 = new JButton("회원가입");
 	JButton jb3 = new JButton("예금");
 	JButton jb4 = new JButton("출금");
 	JButton jb5 = new JButton("잔고");
-
-
 	JTextArea ta = new JTextArea();
-	
 	public MyFrame() {
-		
 		Container con = this.getContentPane();
 		con.setLayout(null);
 		
@@ -39,7 +39,7 @@ public class MyFrame extends JFrame{
 		lb1.setSize(100, 30);
 		
 		con.add(jt1);
-		jt1.setLocation(80, 50);
+		jt1.setLocation(70, 50);
 		jt1.setSize(100, 30);
 		
 		con.add(lb2);
@@ -55,10 +55,9 @@ public class MyFrame extends JFrame{
 		lb3.setSize(100, 30);
 		
 		con.add(jt3);
-		jt3.setLocation(480, 50);
+		jt3.setLocation(490, 50);
 		jt3.setSize(100, 30);
 		
-
 		con.add(ta);
 		ta.setLocation(20, 120);
 		ta.setSize(830, 200);
@@ -83,15 +82,18 @@ public class MyFrame extends JFrame{
 		con.add(jb5);
 		jb5.setLocation(450, 350);
 		jb5.setSize(100, 30);
+		
+		
 		this.setTitle("안녕 스윙");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocation(700, 300);
 		this.setSize(900, 500);
 		this.setVisible(true);
 	}
-	
+
 	public static void main(String[] args) {
 		new MyFrame();
+
 	}
 
 }
