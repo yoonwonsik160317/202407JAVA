@@ -56,13 +56,15 @@
 <body>
     <div class="container">
         <h2>회원 가입</h2>
-        <form action="registerProcess.jsp" method="post">
+        <form action="index.jsp" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <label for="tell">Tell:</label>
+            <input type="tell" id="tell" name="tell" required>
             <input type="submit" value="Register">
         </form>
     </div>

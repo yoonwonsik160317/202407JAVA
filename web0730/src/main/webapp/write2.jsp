@@ -53,8 +53,7 @@ if (rs.next()) {
         </tr>
         <tr>
             <th>작성자</th>
-            <td><input type="text" name="writer" maxlength="20"
-                       value="<%=writer%>">
+            <td><%=username %>
             </td>
         </tr>
         <tr>
