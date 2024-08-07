@@ -17,7 +17,7 @@ public class TestMain {
 		}
 		
 		DeptDTO dto = dao.searchLoc("BOSTON");
-		System.out.println(dto1`);
+		System.out.println(dto);
 	}
 
 }
