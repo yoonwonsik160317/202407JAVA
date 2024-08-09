@@ -1,4 +1,3 @@
-
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
@@ -53,7 +52,8 @@ if (rs.next()) {
         </tr>
         <tr>
             <th>작성자</th>
-            <td><%=username %>
+            <td><input type="text" name="writer" maxlength="20"
+                       value="<%=writer%>">
             </td>
         </tr>
         <tr>
@@ -70,4 +70,3 @@ if (rs.next()) {
 
 </body>
 </html>
-	

@@ -172,7 +172,7 @@
       <Context docBase="web0808" path="/web0808" reloadable="true" source="org.eclipse.jst.jee.server:web0808"/>
       -->
       
-      <Context docBase="web808_Mybatis" path="/web0808" reloadable="true" source="org.eclipse.jst.jee.server:web808_Mybatis"/></Host>
+      <Context docBase="web808_Mybatis" path="/web0808" reloadable="true" source="org.eclipse.jst.jee.server:web808_Mybatis"/><Context docBase="MybatisShop" path="/MybatisShop" reloadable="true" source="org.eclipse.jst.jee.server:MybatisShop"/></Host>
     </Engine>
   </Service>
 </Server>
