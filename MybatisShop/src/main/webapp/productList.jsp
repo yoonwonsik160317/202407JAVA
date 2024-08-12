@@ -8,6 +8,7 @@
 <body>
     <h1>Product List</h1>
     <a href="${pageContext.request.contextPath}/registProduct.jsp">Add New Product</a>
+    <a href="${pageContext.request.contextPath}/justViewCart.jsp">장바구니	</a>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -25,8 +26,8 @@
                 <td>${product.price}</td>
                 <td>${product.stock}</td>
                 <td>
-                    <a href="${pageContext.request.contextPath}/products/${product.id}">View</a>
-                    <a href="${pageContext.request.contextPath}/products/edit/${product.id}">Edit</a>
+                    <a href="${pageContext.request.contextPath}/addToCart.jsp?id=${product.id}">Add to Cart</a>
+                    <a href="${pageContext.request.contextPath}/selectOneForUpdate.jsp?id=${product.id}">Edit</a>
                     <a href="${pageContext.request.contextPath}/products/delete/${product.id}">Delete</a>
                 </td>
             </tr>
